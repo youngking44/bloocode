@@ -48,4 +48,4 @@ Tailwind CSS: Selected for its utility-first approach, allowing for rapid and re
 
 ## Deployment
 
-The application is deployed on Vercel. You can access the live demo at
+The application is deployed on Vercel. You can access the live demo at https://bloocode-movies.netlify.app/
