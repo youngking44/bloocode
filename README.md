@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Introduction
+
+The Movie Library Application is a responsive and dynamic web application that allows users to browse, search, and manage a list of movies fetched from The Movie Database (TMDb) API. The application features a clean and modern UI built using Next.js, TypeScript, and Tailwind CSS.
+
+## Technologies Used
+
+Next.js: A React framework for server-side rendering and static site generation.
+TypeScript: A typed superset of JavaScript that provides type safety.
+Tailwind CSS: A utility-first CSS framework for styling.
+Yarn: A package manager for managing project dependencies.
+Axios: A promise-based HTTP client for making API requests.
+Redux Toolkit: For state management
+Redux persist: For persisting the favorite movies to localStorage
 
 ## Getting Started
 
-First, run the development server:
+Node.js (version 12 or higher)
+Yarn (version 1.22 or higher)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Clone the repository from github
+git clone https://github.com/youngking44/bloocode.git
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Install Dependencies Using Yarn:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+yarn install
 
-## Learn More
+## Create A .env File In The Root Directory And Add These Secrete Variables
 
-To learn more about Next.js, take a look at the following resources:
+NEXT_PUBLIC_API_KEY=
+NEXT_PUBLIC_MOVIES_URL=
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Homepage: Displays a grid of popular movies with a search bar for filtering.
+Movie Details Page: Shows detailed information about a selected movie.
+Favorites: Users can add/remove movies to/from a favorites list, persisted in localStorage.
+Responsive Design: Fully responsive layout using Tailwind CSS.
+Bonus Features:
+Loading skeletons while fetching data.
 
-## Deploy on Vercel
+## Design Decisions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+TypeScript: Used to enforce type safety across the application, improving code quality and maintainability.
+Redux Toolkit: Chosen for state management to handle the favorites list efficiently.
+Tailwind CSS: Selected for its utility-first approach, allowing for rapid and responsive UI development.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+The application is deployed on Vercel. You can access the live demo at
