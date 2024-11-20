@@ -1,8 +1,6 @@
 import { IMovieDetails } from "@/types";
 import axios from "axios";
 
-// https://api.themoviedb.org/3/discover/movie
-
 const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 const moviesUrl = process.env.NEXT_PUBLIC_MOVIES_URL;
 
